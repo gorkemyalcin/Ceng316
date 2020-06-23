@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+
+<GridPane fx:controller="application.controllers.SubscriberController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center"
+          hgap="10" vgap="10">
+    <padding><Insets top="10" right="40" bottom="40" left="20"/></padding>
+  <columnConstraints>
+        <ColumnConstraints minWidth="100" prefWidth="100"
+                           maxWidth="Infinity" halignment="RIGHT">
+        </ColumnConstraints>
+        <ColumnConstraints minWidth="200" prefWidth="200"
+                           maxWidth="Infinity" hgrow="ALWAYS">
+        </ColumnConstraints>
+    </columnConstraints>
+    
+    <ImageView id="boxImage" GridPane.columnIndex="0" 
+           GridPane.rowIndex="0" GridPane.columnSpan="1" 
+           GridPane.rowSpan="1" GridPane.halignment="CENTER">    
+	   <image>
+	      <Image url="@/application/assets/logo.png" />
+	   </image>
+	</ImageView> 
+        <!-- Add Header Label -->
+    <Label text="Ben-Malik" GridPane.columnIndex="0" 
+           GridPane.rowIndex="1" GridPane.columnSpan="1" 
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" >
+        <font>
+            <Font name="Arial Black" size="12" ></Font>
+        </font>
+        <GridPane.margin>
+            <Insets top="0" right="0" bottom="0" left="0"></Insets>
+        </GridPane.margin>
+    </Label>
+  
+    <!-- Add Header Label -->
+    <Label fx:id="greetingMessage" text="Subscriber View" GridPane.columnIndex="1" 
+           GridPane.rowIndex="0" GridPane.columnSpan="1" 
+           GridPane.rowSpan="1" GridPane.halignment="CENTER" >
+        <font>
+            <Font name="Arial Black" size="45"></Font>
+        </font>
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Label>
+    
+  <Button fx:id="signOutButton" text="Sign Out"
+            prefWidth="100" prefHeight="30" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="2"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleSignOutButton">
+        <GridPane.margin>
+            <Insets top="0" right="0" bottom="0" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    
+<Button fx:id="importEmailButton" text="Import an Email File"
+            prefWidth="400" prefHeight="50" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="2"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleImportEmailButton">
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    
+    <Button fx:id="addSubscriberButton" text="Add a Subscriber"
+            prefWidth="400" prefHeight="50" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="4"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleAddSubscriberButton">
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Button>  
+    
+    <Button fx:id="editSubscriberButton" text="Edit a Subscriber"
+            prefWidth="400" prefHeight="50" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="3"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleEditSubscriberButton">
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    
+    <Button fx:id="addSubscriberButton" text="Add a Subscriber"
+            prefWidth="400" prefHeight="50" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="4"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleAddSubscriberButton">
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    
+      <Button fx:id="deleteSubscriberButton" text="Delete a Subscriber"
+            prefWidth="400" prefHeight="50" defaultButton="true"
+            GridPane.columnIndex="1" GridPane.rowIndex="5"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handleDeleteSubscriberButton">
+        <GridPane.margin>
+            <Insets top="10" right="0" bottom="10" left="0"></Insets>
+        </GridPane.margin>
+    </Button>  
+    
+    <Button fx:id="previousButton" text="Go Back"
+            prefWidth="100" prefHeight="30" defaultButton="true"
+            GridPane.columnIndex="0" GridPane.rowIndex="7"
+            GridPane.columnSpan="1" GridPane.rowSpan="1"
+            GridPane.halignment="CENTER"
+            onAction="#handlePreviousButton">
+        <GridPane.margin>
+            <Insets top="0" right="0" bottom="0" left="0"></Insets>
+        </GridPane.margin>
+    </Button>
+    
+    
+     <!-- Add Header Label -->
+    <Label fx:id="aboutUs" text="The Elites" GridPane.columnIndex="0" 
+           GridPane.rowIndex="10" GridPane.columnSpan="2" 
+           GridPane.rowSpan="1" GridPane.halignment="RIGHT" >
+        <font>
+            <Font name="Arial Red" size="20" ></Font>
+        </font>
+        <GridPane.margin>
+            <Insets top="100" right="0" bottom="0" left="20"></Insets>
+        </GridPane.margin>
+    </Label>
+   
+</GridPane>

@@ -1,0 +1,225 @@
+.root {
+	-fx-background-image: url("background.jpg");
+}
+
+#loginButton {
+      -fx-background-color: linear-gradient(#ff5400, #be1d00);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+   
+}
+
+#loginButton:hover{
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 30;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em; /* 4 8 4 8 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
+
+#signOutButton, #previousButton, #emailEventButton, .button
+{
+	
+    -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 15px;
+
+}
+
+#courseButton, #editButton, #importEmailButton, #addSubscriberButton, #editSubscriberButton, #deleteSubscriberButton, #addButton, #deleteButton, #eventButton, #newUserButton, #subscriberButton
+{
+ -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+        -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+        -fx-font-size: 28px;
+    
+}
+
+
+
+
+#courseButton:hover, #eventButton:hover, #importEmailButton:hover, #addSubscriberButton:hover, #editSubscriberButton:hover, #deleteSubscriberBu#editBtton:hover, utton:hover, #addButton:hover, #deleteButton:hover, #newUserButton:hover, #subscriberButton:hover 
+{
+	    -fx-text-fill:  #b3d9ff;
+}
+
+#signOutButton:hover, #previousButton:hover, #emailEventButton:hover, .button:hover
+{
+    -fx-text-fill: #b3d9ff;
+}
+
+
+#signOutButton Text 
+{
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+
+#usernameField, #passwordField, .text-field
+{
+    -fx-background-color: transparent, white, transparent, white;
+    -fx-background-radius: 30;
+    -fx-padding: 0.166667em;
+    -fx-alignment: center;
+    
+}
+
+.textField
+{
+	-fx-max-width: 50;
+    -fx-max-height: 50;
+}
+
+.combo-box .list-cell 
+{
+    -fx-background: white;
+    -fx-background-radius: 30;
+    -fx-background-color: transparent;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+}
+
+.combo-box-popup .list-view 
+{
+	
+    -fx-background-color: white, white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}    
+
+.combo-box-popup .list-view .list-cell 
+{
+    -fx-padding: 4 0 4 5;
+
+    /* No alternate highlighting */
+    -fx-background-color: white;
+}
+
+.combo-box-popup .list-view .list-cell:filled:selected, .combo-box-popup .list-view .list-cell:filled:selected:hover 
+{
+    -fx-background: -fx-accent;
+    -fx-background-color: -fx-selection-bar;
+    -fx-text-fill: -fx-selection-bar-text;
+}
+
+.combo-box-popup .list-view .list-cell:filled:hover 
+{
+    -fx-background-color: white;
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box-base  
+{
+    -fx-skin: "com.sun.javafx.scene.control.skin.ComboBoxBaseSkin";
+    -fx-background-color: white, white, white, white;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-padding: 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-hover-base;
+}
+
+.combo-box-base:showing 
+{
+    -fx-color: -fx-pressed-base;
+}
+
+.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+ #status {
+ 	-fx-background-color: 
+        white;
+ 	-fx-max-width: 700;
+    -fx-max-height: 10;
+    -fx-background-radius: 30;
+    
+ }
+
+#usernameField:hover, #passwordField:hover
+{
+    -fx-background-color: transparent, blue, transparent, white;
+    -fx-background-radius: 30;
+    -fx-padding: 0.166667em;
+    -fx-alignment: center
+}
+
+
+#aboutUs
+{
+	-fx-text-fill: rgb(126, 105, 105);
+	-fx-font-smoothing-type: lcd;
+}
+
+#aboutUs:hover 
+{
+	-fx-text-fill: white;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * JFX Radio Button                                                            *
+ *                                                                             *
+ ******************************************************************************/
+
+.radio-button .radio {
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+    -fx-background-color: white;
+    -fx-background-image: null;
+    -fx-border-radius: 15px;
+    -fx-padding: 4px;
+}
+.radio-button .radio:selected {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:armed {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:determinate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button -radio:indeterminate {
+    -fx-background-color: white;
+    -fx-background-image: null;
+}
+.radio-button .dot {
+    -fx-background-radius: 15px;
+    -fx-padding: 8px;
+}
+
+.radio-button
+{
+    -fx-font-size:25px;
+    -fx-padding:5px;
+} 
+ 
